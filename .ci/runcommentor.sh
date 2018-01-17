@@ -1,5 +1,9 @@
 #!/bin/bash
 sha=`git rev-parse HEAD`
+SLUG="sockeqwe/GithubCommentorTest"
+JDK="oraclejdk8"
+BRANCH="master"
+
 echo "sha = $sha"
 
 echo "CI_PULL_REQUEST = $CI_PULL_REQUEST"
@@ -11,8 +15,9 @@ echo "TRAVIS_PULL_REQUEST = $TRAVIS_PULL_REQUEST"
 echo "TRAVIS_PULL_REQUEST_BRANCH = $TRAVIS_PULL_REQUEST_BRANCH"
 echo "TRAVIS_PULL_REQUEST_SHA = $TRAVIS_PULL_REQUEST_SHA"
 echo "TRAVIS_PULL_REQUEST_SLUG = $TRAVIS_PULL_REQUEST_SLUG"
+echo "TRAVIS_REPO_SLUG = $TRAVIS_REPO_SLUG" 
 
-if [ "$TRAVIS_PULL_REQUEST" = "false" ]
+if [ "$TRAVIS_REPO_SLUG" != "$SLUG" ]
 then
    echo "No pull request. Therefore skipping Github Commentor"
 else
