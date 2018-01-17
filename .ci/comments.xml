@@ -1,0 +1,6 @@
+<comment>
+    <comment>Hey, this is just a simple example that shows a simple comment</comment>
+  <codelinecomment
+        filePath="README.md"
+        lineNumber="1">This is a code review comment on Line 1</codelinecomment>
+</comments>
