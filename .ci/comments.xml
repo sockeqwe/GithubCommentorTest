@@ -3,4 +3,16 @@
   <codelinecomment
         filePath="README.md"
         lineNumber="1">This is a code review comment on Line 1</codelinecomment>
+        <codelinecomment
+        filePath="README.md"
+        lineNumber="1"><![CDATA[Yet another in line comment with some **fancy** `markdown` and xml
+
+        ```xml
+          <some>
+            <embedded x="ml"/>
+            Crazy stuff
+          </some>
+        ```
+        ]]>
+</codelinecomment>
 </comments>
