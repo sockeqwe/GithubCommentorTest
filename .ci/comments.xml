@@ -2,7 +2,7 @@
     <comment>Hey, this is just a simple example that shows a simple comment. And **yes you can use markdown!**</comment>
         <codelinecomment
         filePath="README.md"
-        lineNumber="1"><![CDATA[Yet another in line comment with some **fancy** `markdown` and xml
+        lineNumber="1"><![CDATA[This is an in line comment (at `Line 1`) with some **fancy** `markdown` and embedded xml (code highlight)
 ```xml
   <some>
     <embedded x="ml"/>
@@ -13,5 +13,5 @@
 </codelinecomment>
   <codelinecomment
         filePath="README.md"
-        lineNumber="2">This is a code review comment on Line 1</codelinecomment>
+        lineNumber="2">This is a code review comment on Line 2</codelinecomment>
 </comments>
