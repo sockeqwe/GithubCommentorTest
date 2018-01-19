@@ -1,1 +1,0 @@
-git diff --name-only master | echo "<comments>"; while read -r a; do echo "<codelinecomment filePath=\"$a\" lineNumber=\"1\">This is just an example of an inline code review example</codelinecomment>; done; echo "<comment>This is just an example comment</comment></comments>"; >> comments.xml
